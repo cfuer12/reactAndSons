@@ -90,7 +90,7 @@ function App() {
             </div>
           </div>
           {/* make a list here with called items from API */}
-          <table class="table">
+          <table className="table">
             <tbody>
               {employeeState.map((employee) => (
                 <List
@@ -100,6 +100,7 @@ function App() {
                   email={employee.email}
                   city={employee.city}
                   state={employee.state}
+                  key={employee.id}
                 />
               ))}
             </tbody>
